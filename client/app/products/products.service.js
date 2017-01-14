@@ -2,11 +2,13 @@
 
 angular.module('meanshopApp')
   .factory('Products', function () {
-    var last_id = 2;
+    var last_id = 3;
 
     var example_products = [
-      {_id: 1, title: 'Product 1', price: 123.45, quantity: 10, description: 'Description of Product 1'},
-      {_id: 2, title: 'Product 2', price: 123.45, quantity: 5, description: 'Description of Product 2'}];
+      {_id: 1, title: 'Inspiron 5720', price: 1234.5, quantity: 10, description: 'Inspiron 5720 is a good laptop.'},
+      {_id: 2, title: 'MacBook Pro 2016', price: 1999.99, quantity: 5, description: 'MacBook Pro laptops are fancy but expensive.'},
+      {_id: 3, title: 'HP Stream Cloudbook', price: 350, quantity: 10, description: 'Cloudbook and Chromebook laptops are like netbooks.'}
+    ];
 
     // Public API here
     return {
