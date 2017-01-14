@@ -1,6 +1,11 @@
 <div ng-include="'components/navbar/navbar.html'"></div>
+
 <div class="container">
-  <div class="col-sm-6 col-md-4" ng-show="products.length < 1"> No products to show. </div>
+  <div class="col-sm-6 col-md-4">
+    <p ng-show="products.length < 1"> No products to show.</p>
+    <hr>
+    <a ui-sref="newProduct">New Product</a>
+  </div>
 
   <div class="col-sm-6 col-md-4" ng-repeat="product in products">
     <div class="thumbnail">

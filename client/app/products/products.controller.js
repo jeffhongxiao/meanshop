@@ -4,7 +4,7 @@ angular.module('meanshopApp')
   .controller('ProductsCtrl', function ($scope, Products) {
     $scope.products = Products.query();
   })
-  .controller('ProductViewCtrl', function($scope, $state, $stateParams, Product) {
+  .controller('ProductViewCtrl', function($scope, $state, $stateParams, Products) {
     $scope.product = Products.get({id: $stateParams.id});
 
     $scope.deleteProduct = function() {
@@ -12,7 +12,7 @@ angular.module('meanshopApp')
       $state.go('products');
     };
   })
-  .controller('ProductNewCtrl', function($scope, $state, Product) {
+  .controller('ProductNewCtrl', function($scope, $state, Products) {
     $scope.product = {};
 
     $scope.addProduct = function(product) {
@@ -20,7 +20,7 @@ angular.module('meanshopApp')
       $state.go('products');
     };
   })
-  .controller('ProductEditCtrl', function($scope, $state, $stateParams, Product) {
+  .controller('ProductEditCtrl', function($scope, $state, $stateParams, Products) {
     $scope.product = Products.get({id: $stateParams.id});
     $scope.editProduct = function(product) {
       Products.update($scope.product);

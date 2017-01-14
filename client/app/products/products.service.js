@@ -14,7 +14,8 @@ angular.module('meanshopApp')
         return example_products;
       },
 
-      get: function(param) {
+      get: function(params) {
+        /*** use angular.forEach() ***/
         var result = {};
         angular.forEach(example_products, function(product) {
           if (product._id == params.id) {
@@ -23,6 +24,13 @@ angular.module('meanshopApp')
         result);
 
         return result.product;
+
+        /*** old-school looping ***/
+        // for(var i=0; i< example_products.length; i++) {
+        //   if(example_products[i]._id == product.id)
+        //     return example_products[i];
+        // }
+        // return null;
       },
 
       delete: function(params) {
