@@ -4,6 +4,26 @@
 </div>
 
 
+<div class="row">
+	<div class="col-md-2">
+	  <div ngf-select="upload($file)" ngf-drop="upload($file)" class="drop-box"
+			ngf-drag-over-class="dragover" ngf-multiple="true"
+			ngf-pattern="'image/*'" ngf-max-size="15MB"
+		  accept="image/*">Drop Images here or click to upload</div>
+
+		<div ngf-no-file-drop>File Drag/Drop is not supported for this browser"</div>
+
+		<button accept="image/*" ngf-max-size="15MB" type="file" class="btn btn-primary"
+			ngf-select="upload($file)">Upload on file select</button>
+
+		<h2 ng-show="file">Preview</h2>
+		<img ngf-src="file" width="170px">
+		<div ng-show="file">{{file.name}} {{file.$error}} {{file.$errorParam}}</div>
+	</div>
+</div>
+
+
+<div class="col-md-10">
 <div class="form-group">
   <label for="title" class="col-sm-2 control-label">Title</label>
   <div class="col-sm-10">
@@ -30,3 +50,5 @@
     <input type="submit" class="btn btn-primary" value="Save" />
   </div>
 </div>
+</div>
+
