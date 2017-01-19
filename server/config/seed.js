@@ -31,19 +31,19 @@ Product.find({}).removeAsync()
   .then(function() {
     Product.createAsync({
       title: 'Inspiron 5720',
-      imageUrl: '/assets/images/Dell_Inspiron_5720.jpg',
+      imageUrl: '/assets/uploads/dell_inspiron_5720.jpg',
       price: 1234.99,
       stock: 250,
       description: 'Inspiron 5720 is a good laptop.'
     }, {
       title: 'MacBook Pro 2016',
-      imageUrl: '/assets/images/macbook-pro-2016.jpg',
+      imageUrl: '/assets/uploads/macbook-pro-2016.jpg',
       price: 1999.99,
       stock: 100,
       description: 'MacBook Pro laptops are fancy but expensive.'
     }, {
       title: 'HP Stream Cloudbook',
-      imageUrl: '/assets/images/hp-stream-3108-002.jpg',
+      imageUrl: '/assets/uploads/hp-stream-3108-002.jpg',
       price: 349.99,
       stock: 50,
       description: 'Cloudbook and Chromebook laptops are like netbooks.'

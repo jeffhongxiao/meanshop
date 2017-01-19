@@ -8,6 +8,7 @@ var ProductSchema = new Schema({
   price: { type: Number, required: true, min: 0},
   stock: { type: Number, default: 1},
   imageUrl: String,
+  // imageBin: { data: Buffer, contentType: String },
   description: String
 });
 
