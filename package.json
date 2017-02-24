@@ -1,8 +1,9 @@
 {
   "name": "meanshop",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "server/app.js",
   "dependencies": {
+	"grunt-cli": "1.2.0",
     "babel-core": "^5.6.4",
     "bluebird": "^2.9.34",
     "body-parser": "~1.5.0",
