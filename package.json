@@ -97,10 +97,10 @@
     "supertest": "~0.11.0"
   },
   "engines": {
-    "node": ">=0.12.0"
+    "node": "0.12.7"
   },
   "scripts": {
-    "start": "node server",
+    "start": "grunt serve",
     "test": "grunt test",
     "update-webdriver": "node node_modules/grunt-protractor-runner/node_modules/protractor/bin/webdriver-manager update"
   },
